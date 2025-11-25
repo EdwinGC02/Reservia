@@ -6,8 +6,8 @@
         <!-- Start::main-sidebar-header -->
         <div class="main-sidebar-header">
             <Link :href="`${baseUrl}/dashboards/sales/`" class="header-logo">
-            <BaseImg src="/images/brand-logos/komercia-sidebar.png" alt="logo" class="desktop-logo" style="width: 130px; height: 60px;"/>
-            <BaseImg src="/images/brand-logos/komercia-header.png" alt="logo" class="toggle-logo" style="width: 40px; height: 40px;"/>
+            <BaseImg src="/images/brand-logos/Reservia-sidebar.png" alt="logo" class="desktop-logo" style="width: 130px; height: 60px;"/>
+            <BaseImg src="/images/brand-logos/Reservia-header.png" alt="logo" class="toggle-logo" style="width: 40px; height: 40px;"/>
             <BaseImg src="/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark" />
             <BaseImg src="/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark" />
             </Link>

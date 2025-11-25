@@ -5,7 +5,7 @@ services:
       # dockerfile: Dockerfile
       context: .                      # 👈 raíz del proyecto (no ./docker/php)
       dockerfile: ./docker/php/Dockerfile
-    container_name: laravel_app_komercia
+    container_name: laravel_app_Reservia
     working_dir: /var/www
     volumes:
       - ./:/var/www
@@ -16,7 +16,7 @@ services:
 
   web:
     image: nginx:1.27-alpine
-    container_name: nginx_komercia
+    container_name: nginx_Reservia
     ports:
       - "80:80"
     volumes:
@@ -28,11 +28,11 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: mysql_komercia
+    container_name: mysql_Reservia
     ports:
-      - "3306:3306"
+      - "3307:3306"
     environment:
-      - MYSQL_DATABASE=komercia
+      - MYSQL_DATABASE=Reservia
       - MYSQL_USER=app
       - MYSQL_PASSWORD=app
       - MYSQL_ROOT_PASSWORD=root
@@ -43,7 +43,7 @@ services:
 
   node:
     image: node:20
-    container_name: node_komercia
+    container_name: node_Reservia
     working_dir: /var/www
     volumes:
       - ./:/var/www
@@ -51,13 +51,14 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
       - VITE_HOST=0.0.0.0
+      - NODE_OPTIONS=--max-old-space-size=4096
     ports:
       - "5173:5173"
     command: sh -lc "npm install && npm run dev -- --host 0.0.0.0"
 
   mailpit:
     image: axllent/mailpit:latest
-    container_name: mailpit_komercia
+    container_name: mailpit_Reservia
     ports:
       - "8025:8025"   # UI web
       - "1025:1025"   # SMTP
@@ -65,7 +66,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:5.2
-    container_name: phpmyadmin_komercia
+    container_name: phpmyadmin_Reservia
     environment:
       - PMA_HOST=db          # nombre del servicio MySQL en tu compose
       - PMA_PORT=3306

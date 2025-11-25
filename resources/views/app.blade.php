@@ -7,7 +7,7 @@
   <title inertia>Vyzor - Inertia + Vue & Laravel Admin & Dashboard Template</title>
   <!-- Favicon -->
   {{-- <link rel="icon" href="{{asset('/images/brand-logos/favicon.ico')}}" type="image/x-icon"> --}}
-  <link rel="icon" href="{{asset('/images/brand-logos/komercia-header.png')}}" style="width: 50px; height: 50px;">
+  <link rel="icon" href="{{asset('/images/brand-logos/Reservia-header.png')}}" style="width: 50px; height: 50px;">
   <!-- ICONS CSS -->
   <link href="{{asset('/icon-fonts/icons.css')}}" rel="stylesheet">
   <!--@routes-->

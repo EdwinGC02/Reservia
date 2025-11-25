@@ -89,8 +89,8 @@ onMounted(() => {
 
     <Head title="Login | Vyzor - Laravel & Vue " />
     <div class="authentication-basic-background">
-        <!-- <BaseImg src="/images/brand-logos/komercia-sidebar.png" alt="" /> -->
-        <BaseImg src="/images/brand-logos/komercia-login.png" alt="" />
+        <!-- <BaseImg src="/images/brand-logos/Reservia-sidebar.png" alt="" /> -->
+        <BaseImg src="/images/brand-logos/Reservia-login.png" alt="" />
     </div>
     <ParticlesJs />
     <div class="container">
@@ -100,7 +100,7 @@ onMounted(() => {
                     <div class="card-body p-sm-5">
                         <div class="mb-4 text-center">
                             <Link :href="`${baseUrl}/dashboards/sales`">
-                            <BaseImg src="/images/brand-logos/komercia-sidebar.png" alt="logo" class="desktop-dark" style="width: 150px; height: 70px;" />
+                            <BaseImg src="/images/brand-logos/Reservia-sidebar.png" alt="logo" class="desktop-dark" style="width: 150px; height: 70px;" />
                             </Link>
                         </div>
                         <div>
